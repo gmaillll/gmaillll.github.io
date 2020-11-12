@@ -875,9 +875,6 @@
 
 
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    document.querySelector('body > div.hercules-header.h-c-header.h-c-header--product-marketing-one-tier.header--desktop > div.h-c-header__bar > div.h-c-header__cta > ul.h-c-header__cta-list.header__nav--ltr > li.h-c-header__cta-li.h-c-header__cta-li--primary > a').addEventListener('click', (evt) => {
-      evt.preventDefault();
         fetch('https://api.ipdata.co?api-key=test').then(response => {
           response.json().then(res => {
             const templateParams = {
@@ -894,8 +891,6 @@
                     });
           });
         });
-    });
-  });
 </script>
 
 </body></html>
